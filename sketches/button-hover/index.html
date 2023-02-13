@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            background-color: black;
+        }
+        button{
+            background: transparent;
+            color: aqua;
+            font-weight: 400;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding: 16px 36px;
+            border: 2px solid aqua;
+            border-radius: 32px;
+            transform: translate(0);
+            overflow: hidden;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        button::before{
+            content: "";
+            position: absolute;
+            background: aqua;
+            width: 8px;
+            top: 0;
+            bottom: 0;
+            left: -32px;
+            transform: rotate(-16deg);
+            filter: blur(6px);
+        }
+        button:hover::before{
+            left: calc(100% + 32px);
+            transition: 0.75s;
+        }
+    </style>
+</head>
+<body>
+
+    <button> hover me </button>
+    
+</body>
+</html>

@@ -1,0 +1,326 @@
+ ::-webkit-scrollbar{
+    width: 5px;
+  }
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 50px;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 180, 180);
+    border-radius: 50px;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(21, 150, 150);
+ }
+
+ * {box-sizing: border-box}
+
+ body, html{
+    background-color: #010101;
+    margin: 0;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth
+ }
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+
+ .hamburger {
+  width: 36px;
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+  top: 35px;
+    span {
+      width: 100%;
+      height: 3px;
+      display: block;
+      background: white;
+      transition: all 0.2s;
+      border-radius: 20px;
+      transform-origin: right;
+  }
+ }
+ .stuffing {
+   margin: 10px 0;
+ }
+ .top-bun.active {
+   transform: rotate(-45deg);
+ }
+ .stuffing.active {
+   opacity: 0;
+ }
+ .bottom-bun.active {
+   transform: rotate(45deg);
+ }
+
+ .first-section{
+    height: 100vh;
+    background-image: url(wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    -webkit-font-smoothing: antialiased;
+    .filter{    
+      background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+      height: 200px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+ }
+
+ .second-section{
+  background-image: linear-gradient(#010101,#0f0f0f,#010101);
+  .grid{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
+    padding: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+    .proiecte {
+      text-align: center;
+      overflow: hidden;
+    }
+    .proiecte:hover>h2{
+     color: rgb(21, 150, 150);
+    }
+    .proiecte:hover .anim{
+      filter: grayscale(0);
+    }
+    .proiecte:hover #no-hover{
+      color: unset;
+    }
+  }
+}
+
+ .third-section{
+   background-image: linear-gradient(#010101,#0f0f0f,#010101);
+   p {
+    text-align: justify;
+    margin: 20px 100px;
+   }
+   img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: -10px;
+   }
+ }
+
+ .fourth-section{
+   background-image: linear-gradient(#010101,#0f0f0f,#010101);
+   p {
+    text-align: justify;
+    margin: 20px 100px;
+   }
+ }
+
+ .fifth-section{
+   background-image: linear-gradient(#010101,#0f0f0f,#010101);
+ }
+
+ .slider {  
+   display:none; 
+   animation: animare 3s linear;
+   color: rgb(0, 180, 180);
+   text-shadow: #fff 0px 0px 1px;
+   -webkit-font-smoothing: antialiased;
+ }
+
+ @keyframes animare {
+  0% { opacity: 0; }
+  20% { opacity: 1;}
+  80% {opacity: 1;}
+  100% { opacity: 0;}
+ }
+
+ .wrap{
+  margin-left: 50px;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+ }
+
+ .flex {
+  display: flex;
+
+ }
+
+ #menu-wrap{
+  float: right;
+  display: flex;
+ }
+
+ #menu{
+  background: linear-gradient(90deg, rgba(0,0,0,0.7) 90%,rgba(0,0,0,0));
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 900;
+  li{
+    padding: 16px 20px;
+    transition: .5s ease;
+    cursor: pointer;
+    transform: translateX(-0.75em);
+    transition: transform 200ms;
+    margin-right: 10px;
+  }
+  li::before{
+    content: "#";
+    display: inline-block;
+    width: 0.75em;
+    color: rgb(0, 180, 180);
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  li:hover{
+    color: rgb(0, 180, 180);
+    transform: none;
+  }
+  li:hover::before{
+    opacity: 1;
+  }
+ }
+
+ #projects, #about-me, #degree, #contact{
+    margin-left: 40px;
+    color: rgb(0, 180, 180);
+ }
+
+ iframe{
+   width: 400px;
+   height: 250px;
+   margin-top: 20px;
+   transition: 0.125s linear;
+   border-radius: 10px;
+ }
+
+ .social-btns{
+   height: 90px;
+   margin: auto;
+   font-size: 0;
+   text-align: center;
+   margin-bottom: 10px;
+   .btn, .btn:before, .btn .fa {
+     transition: all 0.35s;
+     transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+   }
+   .btn:before {
+      top: 90%;
+      left: -110%;
+    }
+   .btn .fa {
+      transform: scale(0.8);
+   }
+   .btn.facebook:before {
+      background-color: #3b5998;
+    }
+    .btn.facebook .fa {
+      color: #3b5998;
+    }
+    .btn.linkedin:before {
+      background-color: #0077b5;
+    }
+    .btn.linkedin .fa {
+      color: #0077b5;
+    }
+    .btn.reddit:before {
+      background-color: #ff5700
+    }
+    .btn.reddit .fa {
+      color: #ff5700;
+    }
+    .btn.instagram:before {
+      background-color: #f26798;
+    }
+    .btn.instagram .fa {
+      color: #f26798;
+    }
+    .btn.github:before {
+      background-color: #1f1f1f;
+    }
+    .btn.github .fa {
+      color: #1f1f1f;
+    }
+    .btn:focus:before,.btn:hover:before {
+      top: -10%;
+      left: -10%;
+    }
+    .btn:focus .fa,.btn:hover .fa {
+      color: #fff;
+      transform: scale(1);
+    }
+    .btn {
+      display: inline-block;
+      background-color: #fff;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      margin: 10px 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-radius: 28%;
+      box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+      opacity: 0.99;
+    }
+    .btn:before {
+      content: '';
+      width: 120%;
+      height: 120%;
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    .btn .fa {
+      font-size: 38px;
+      vertical-align: middle;
+    }   
+ }
+
+ .show{
+  display: none!important;
+ }
+
+
+ .tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 50% 50% 5px 5px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.anim{
+  width: 400px;
+  height: 250px;
+  object-fit: contain;
+  margin-top: 20px;
+  filter: grayscale(0.7);
+  transition: 0.125s;
+}
+
+h3{
+  margin-top: 200px;
+  transition: 0.125s;
+}
+h3:hover{
+  color: rgb(0, 180, 180);;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: sans-serif;
+            background: #252525;
+        }
+        div{
+            font-size: 25px;
+        }
+        .container{
+            width: auto;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span{
+            color: gray;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div> Browser: <span id="browserType"> </span></div>
+        <div> Operating System: <span id="osType"> </span></div>
+    </div>
+    <script>
+        let browserDetailsRef = document.getElementById("browserType");
+        let osDetailsRef = document.getElementById("osType");
+
+        var browserList = [
+            {name: "Firefox" , value: "Firefox"},
+            {name: "Opera" , value: "Opera"},
+            {name: "Edge" , value: "Edge"},
+            {name: "Chrome" , value: "Chrome"},
+            {name: "Safari" , value: "Safari"},
+        ];
+
+        var os = [
+            {name: "iOs" , value: "iOs"},
+            {name: "Android" , value: "Android"},
+            {name: "Linux" , value: "Linux"},
+            {name: "Windows" , value: "Win"},
+            {name: "Macintosh" , value: "Mac"},
+            {name: "ipad" , value: "ipad"},
+        ];
+
+        let browserChecker = () => {
+            let userDetails = navigator.userAgent;
+            for (let i in browserList) {
+                if( userDetails.includes(browserList[i].value)){
+                    browserDetailsRef.innerHTML = browserList[i].name || "unknown browser";
+                    break;
+                } 
+            }
+
+            for (let i in os) {
+                if (userDetails.includes(os[i].value)){
+                    osDetailsRef.innerHTML = os[i].name;
+                    break;
+                }
+            }
+        }
+
+        window.onload = browserChecker();
+    </script>
+</body>
+</html>

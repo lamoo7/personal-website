@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semafor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+</head>
+<body>
+    <div class="semafor">
+        <div class="led secunde">
+            <h1 id="countdown">30</h1>
+        </div>
+        <div class="led verde"></div>
+        <div class="led portocaliu"></div>
+        <div class="led rosu"></div>
+    </div>
+    <script>
+        var count = 30;
+        var countdownEl = document.getElementById("countdown");
+
+        var countdown = setInterval(function() {
+          count--;
+          countdownEl.innerHTML = count;
+          if (count === 0) {
+            count = 31;
+          }
+        }, 1000);
+    </script>
+</body>
+</html>

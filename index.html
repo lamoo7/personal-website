@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Website • Gorcea Radu Andrei</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="html.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="first-section">
+      <div id="menu-wrap">
+        <ul id="menu" class="show">
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#about-me"><li>About Me</li></a>
+          <a href="#degree"><li>Degree</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+        <div class="hamburger">
+          <span class="top-bun"></span>
+          <span class="stuffing"></span>
+          <span class="bottom-bun"></span>
+        </div>
+      </div>
+
+      <div class="wrap">
+
+        <h1>Hi! My name is Radu</h1>
+
+        <div class="flex">
+
+          <h1>I am a </h1>
+
+          <div class="slider">
+            <h1>&nbspStudent</h1>
+          </div>
+          <div class="slider">
+            <h1>&nbspDeveloper</h1>
+          </div>
+        </div>
+
+        <h1>And I love building websites</h1>
+
+      </div>
+
+      <div class="filter"></div>
+
+    </div>
+
+    <div class="second-section">
+
+      <h1 id="projects">#Projects</h1>
+
+      <button class="tablink" onclick="openPage('Sketches', this, 'rgb(0, 180, 180)')" id="defaultOpen">Sketches</button>
+      <button class="tablink" onclick="openPage('Full Projects', this, 'rgb(0, 180, 180)')">Full Projects</button>
+      <button class="tablink" onclick="openPage('Animations', this, 'rgb(0, 180, 180)')">Animations</button>
+
+      <div id="Sketches" class="tabcontent grid">
+        <div class="proiecte">
+          <h2 class="proiecte">Browser & Operating System Detector</h2>
+          <iframe src="sketches/detector/index.html" frameborder="0"></iframe>
+        </div>
+
+        <div class="proiecte">
+          <h2>Moving Gradient Background</h2>
+          <iframe src="sketches/moving-gradient/index.html" frameborder="0"></iframe>
+        </div>
+        
+        <div class="proiecte">
+          <h2>Button Hover Effect</h2>
+          <iframe src="sketches/button-hover/index.html" frameborder="0"></iframe>
+        </div>
+
+        <div class="proiecte">
+          <h2>Floating Label on Input Field</h2>
+          <iframe src="sketches/floating-label/index.html" frameborder="0"></iframe>
+        </div>
+
+        <div class="proiecte">
+          <h2>Hamburger Menu</h2>
+          <iframe src="sketches/hamburger-menu/index.html" frameborder="0"></iframe>
+        </div>
+
+        <div class="proiecte">
+          <h2>Modern CSS Button</h2>
+          <iframe src="sketches/modern-button/index.html" frameborder="0"></iframe>
+        </div>
+      </div>
+      
+      <div id="Full Projects" class="tabcontent grid">
+        
+        <iframe src="http://92.80.118.187/ChatApp/" style="width: 700px; height: 550px;" frameborder="0"></iframe>
+        
+        <div class="proiecte">
+          <h2 id="no-hover">ChatApp</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium harum labore culpa explicabo nulla vitae libero itaque, assumenda, hic eaque sapiente obcaecati nam ratione est vel natus quod! Consectetur laborum aspernatur sed, quaerat ullam sequi ipsam. Eaque asperiores, assumenda laborum quo mollitia aliquam corrupti sapiente dolores praesentium molestias deserunt.</p>
+          <a href="http://92.80.118.187/ChatApp/" target="_blank">
+            <h3>Go to project</h3>
+          </a>
+        </div>
+      </div>
+      
+      <div id="Animations" class="tabcontent grid">
+        
+        <div class="proiecte">
+          <h2>Day and Night</h2>
+          <a href="animations/daynight/index.html" target="_blank">
+            <img src="animations/daynight.jpeg" alt="daynight" class="anim">
+          </a>
+        </div>     
+
+        <div class="proiecte">
+          <h2>Clock</h2>
+          <a href="animations/clock/index.html" target="_blank">
+            <img src="animations/clock.jpeg" alt="clock" class="anim">
+          </a>
+        </div> 
+
+        <div class="proiecte">
+          <h2>Traffic Lights</h2>
+          <a href="animations/traffic/index.html" target="_blank">
+            <img src="animations/traffic.jpeg" alt="traffic" class="anim">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="third-section">
+      <h1 id="about-me">#About Me</h1>
+      <p>The main stacks i am working with are VANILLA HTML<img src="html.png" alt="HTML"> , VANILLA JAVASCRIPT<img src="js.png" alt="JAVASCRIPT">, VANILLA CSS<img src="css.png" alt="CSS">
+      and SASS<img src="sass.png" alt="SASS">.</p>
+      <p>I am also learning Angular<img src="angular.png" alt="Angular"> , PHP<img src="php.png" alt="PHP"> and MySQL<img src="mysql.png" alt="MYSQL">.</p>
+    </div>
+
+    <div class="fourth-section">
+      <h1 id="degree">#Degree</h1>
+      <p>I am currently studying Electronics, Telecommunications and Information Technology at TUIASI.</p>
+    </div>
+
+    <div class="fifth-section">
+      <h1 id="contact">#Contact</h1>
+  
+      <div class="social-btns">
+        <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100057258791578"><i class="fa fa-facebook"></i></a>
+        <a class="btn linkedin" href="https://www.linkedin.com/in/radu-andrei-gorcea-9232a2225/"><i class="fa">&#xf0e1;</i></i></a>
+        <a class="btn reddit" href="#"><i class="fa fa-reddit"></i></a>
+        <a class="btn instagram" href="https://www.instagram.com/big._.niqqa.69/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a class="btn github" href="https://github.com/lamoo7"><i class="fa fa-github"></i></a>
+      </div>
+
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      slide();
+
+      function slide() {
+        var i;
+        var x = document.getElementsByClassName("slider");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(slide, 3000); 
+      }
+
+
+      const hamburger = document.querySelector(".hamburger");
+      const layers = document.querySelectorAll(".hamburger span");
+
+      hamburger.addEventListener("click", (e) => {
+          layers.forEach((layer) => layer.classList.toggle("active"));
+          document.getElementById("menu").classList.toggle("show");
+      });
+
+
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+          tablinks[i].style.boxShadow = "";
+        }
+        document.getElementById(pageName).style.display = "grid";
+        elmnt.style.backgroundColor = color;
+        elmnt.style.boxShadow = "0 5px 30px rgb(0, 180, 180)";
+      }
+
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
