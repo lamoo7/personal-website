@@ -6,199 +6,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="html.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c48f0d09a5.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <div class="first-section">
-      <div id="menu-wrap">
-        <ul id="menu" class="show">
-          <a href="#projects"><li>Projects</li></a>
-          <a href="#about-me"><li>About Me</li></a>
-          <a href="#degree"><li>Degree</li></a>
-          <a href="#contact"><li>Contact</li></a>
-        </ul>
-        <div class="hamburger">
-          <span class="top-bun"></span>
-          <span class="stuffing"></span>
-          <span class="bottom-bun"></span>
-        </div>
-      </div>
+<body>
 
+    <nav>
+      <img src="utilities/me.jpg" alt="me">
+      <h3>Radu Andrei Gorcea</h3>
+      <a class="menu-link active" href="#section1">Home</a>
+      <a class="menu-link" href="#section2">About</a>
+      <a class="menu-link" href="#section3">Skills</a>
+      <a class="menu-link" href="#section4">Education</a>
+      <a class="menu-link" href="#section5">Work</a>
+      <a class="menu-link" href="#section6">Contact</a>
+    </nav>
+    
+    <section id="section1" class="section">
       <div class="wrap">
-
         <h1>Hi! My name is Radu</h1>
-
         <div class="flex">
-
           <h1>I am a </h1>
-
           <div class="slider">
-            <h1>&nbspStudent</h1>
+            <h1>Student</h1>
           </div>
           <div class="slider">
-            <h1>&nbspDeveloper</h1>
+            <h1>Developer</h1>
           </div>
         </div>
-
         <h1>And I love building websites</h1>
-
+        <a href="CV.pdf" download>download cv <i class="fa-solid fa-download"></i> </a>
       </div>
+    </section>
+    
+    <section id="section2" class="section">
+      <h2>About</h2>
+      <p>I'm a passionate and motivated Engineering student with a strong interest in web
+        development. I excel at problem-solving and quickly grasp new concepts and
+        technologies. As a team player, I constantly seek growth opportunities. My goal is to
+        leverage my technical skills to effectively bring to life the projects I envision.</p>
+    </section>
+    
+    <section id="section3" class="section">
+      <h2>Skills</h2>
+      <table>
+        <tr>
+          <td><img src="utilities/html.png"></td>
+          <td>HTML</td>
+          <td> 
+            <div class="bar">
+              <div class="color-bar" style="--i: 95%; background-color: coral;"></div>
+              <div class="circle" style="background-color: coral;"></div>
+            </div>
+          </td>
+          <td>95%</td>
+        </tr>
+        <tr>
+          <td><img src="utilities/css.png"></td>
+          <td>CSS</td>
+          <td>            
+            <div class="bar">
+              <div class="color-bar" style="--i: 90%; background-color: #2b62ea;"></div>
+              <div class="circle" style="background-color: #2b62ea"></div>
+            </div>
+          </td>
+          <td>90%</td>
+        </tr>
+        <tr>
+          <td><img src="utilities/sass.png"></td>
+          <td>SCSS / SASS</td>
+          <td>            
+            <div class="bar">
+              <div class="color-bar" style="--i: 80%; background-color: #d0639d;"></div>
+              <div class="circle" style="background-color: #d0639d;"></div>
+            </div>
+          </td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td><img src="utilities/js.png"></td>
+          <td>JavaScript</td>
+          <td>            
+            <div class="bar">
+              <div class="color-bar" style="--i: 80%; background-color: #f0dc4e;"></div>
+              <div class="circle" style="background-color: #f0dc4e;"></div>
+            </div>
+          </td>
+          <td>80%</td>
+        </tr>
+        <tr>
+          <td><img src="utilities/mysql.png"></td>
+          <td>MySQL</td>
+          <td>            
+            <div class="bar">
+              <div class="color-bar" style="--i: 70%; background-color: #4479a1;"></div>
+              <div class="circle" style="background-color: #4479a1;"></div>
+            </div>
+          </td>
+          <td>70%</td>
+        </tr>
+        <tr>
+          <td><img src="utilities/php.png"></td>
+          <td>PHP</td>
+          <td>            
+            <div class="bar">
+              <div class="color-bar" style="--i: 60%; background-color: #92a9ed;"></div>
+              <div class="circle" style="background-color: #92a9ed;"></div>
+            </div>
+          </td>
+          <td>60%</td>
+        </tr>
+        <tr>
+          <td><img src="utilities/angular.png"></td>
+          <td>Angular</td>
+          <td>            
+            <div class="bar">
+              <div class="color-bar" style="--i: 50%; background-color: #e23237;"></div>
+              <div class="circle" style="background-color: #e23237;"></div>
+            </div>
+          </td>
+          <td>50%</td>
+        </tr>
+      </table>
+    </section>
 
-      <div class="filter"></div>
+    <section id="section4" class="section">
+      <h2>Education</h2>
+      <p>I am currently a 2nd year student at the Faculty of Electronics, Telecommunications, and Information Technology (ETTI)
+         at the Technical University 'Gheorghe Asachi' of Iasi (TUIASI). As a student in the ETTI program, I am immersed in a dynamic
+          learning environment that combines theoretical knowledge with hands-on practical experience. The faculty's comprehensive 
+          curriculum equips me with a solid foundation in electronics, telecommunications, and information technology. With access to 
+          state-of-the-art facilities and dedicated faculty members, I am constantly challenged and inspired to explore cutting-edge 
+          technologies and develop innovative solutions. Being part of ETTI at TUIASIs up exciting opportunities for personal and 
+          professional growth, paving the way for a promising career in the ever-evolving field of technology.</p>
 
-    </div>
+      <ul>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>Univeristy <span>2021 - present</span></h2>
+          <p>Undergraduate at Faculty of Electronics, Telecommunications and Information Technology @ Technical Univeristy "Gheorghe Asachi" IASI</p>
+        </li>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>Highschool <span>2017 - 2021</span></h2>
+          <p>High School Diploma ( Mathematics and Computer Science ) at Colegiul Național Ștefan cel Mare din Târgu Neamț</p>
+        </li>
+      </ul>
+          
+    </section>
 
-    <div class="second-section">
+    <section id="section5" class="section">
+      <h2>Work</h2>
 
-      <h1 id="projects">#Projects</h1>
-
-      <button class="tablink" onclick="openPage('Sketches', this, 'rgb(0, 180, 180)')" id="defaultOpen">Sketches</button>
-      <button class="tablink" onclick="openPage('Full Projects', this, 'rgb(0, 180, 180)')">Full Projects</button>
-      <button class="tablink" onclick="openPage('Animations', this, 'rgb(0, 180, 180)')">Animations</button>
-
-      <div id="Sketches" class="tabcontent grid">
-        <div class="proiecte">
-          <h2 class="proiecte">Browser & Operating System Detector</h2>
-          <iframe src="sketches/detector/index.html" frameborder="0"></iframe>
+      <div class="work">
+        <div class="top-side">
+          <h3>ChatApp</h3>
+          <div class="flex">
+            <button class="tablink" onclick="TabOpener(event,'Iframe1')">Iframe</button>
+            <button class="tablink" onclick="TabOpener(event,'Details1')">Details</button>
+          </div>
         </div>
 
-        <div class="proiecte">
-          <h2>Moving Gradient Background</h2>
-          <iframe src="sketches/moving-gradient/index.html" frameborder="0"></iframe>
+        <div id="Iframe1" class="tab" style="display: none;">
+          <iframe src="http://localhost/chatapp" frameborder="0"></iframe>
         </div>
-        
-        <div class="proiecte">
-          <h2>Button Hover Effect</h2>
-          <iframe src="sketches/button-hover/index.html" frameborder="0"></iframe>
-        </div>
-
-        <div class="proiecte">
-          <h2>Floating Label on Input Field</h2>
-          <iframe src="sketches/floating-label/index.html" frameborder="0"></iframe>
-        </div>
-
-        <div class="proiecte">
-          <h2>Hamburger Menu</h2>
-          <iframe src="sketches/hamburger-menu/index.html" frameborder="0"></iframe>
-        </div>
-
-        <div class="proiecte">
-          <h2>Modern CSS Button</h2>
-          <iframe src="sketches/modern-button/index.html" frameborder="0"></iframe>
-        </div>
-      </div>
       
-      <div id="Full Projects" class="tabcontent grid">
-        
-        <iframe src="http://chatapp.42web.io/" style="width: 700px; height: 550px;" frameborder="0"></iframe>
-        
-        <div class="proiecte">
-          <h2 id="no-hover">ChatApp</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis praesentium harum labore culpa explicabo nulla vitae libero itaque, assumenda, hic eaque sapiente obcaecati nam ratione est vel natus quod! Consectetur laborum aspernatur sed, quaerat ullam sequi ipsam. Eaque asperiores, assumenda laborum quo mollitia aliquam corrupti sapiente dolores praesentium molestias deserunt.</p>
-          <a href="http://92.80.118.187/ChatApp/" target="_blank">
-            <h3>Go to project</h3>
-          </a>
+        <div id="Details1" class="tab" style="display: none;">
+          <p>A website made for chatting, where any user can upload messages and pictures, and create up to 3 chatting rooms. </p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/css.png">
+            <img src="utilities/php.png">
+            <img src="utilities/mysql.png">
+            <img src="utilities/js.png">
+          </div>
         </div>
+
       </div>
+
+      <div class="work">
+        <div class="top-side">
+          <h3>MusicShare</h3>
+          <div class="flex">
+            <button class="tablink" onclick="TabOpener(event,'Iframe2')">Iframe</button>
+            <button class="tablink" onclick="TabOpener(event,'Details2')">Details</button>
+          </div>
+        </div>
+
+        <div id="Iframe2" class="tab" style="display: none;">
+          <iframe src="http://localhost/musicapp" frameborder="0"></iframe>
+        </div>
       
-      <div id="Animations" class="tabcontent grid">
-        
-        <div class="proiecte">
-          <h2>Day and Night</h2>
-          <a href="animations/daynight/index.html" target="_blank">
-            <img src="animations/daynight.jpeg" alt="daynight" class="anim">
-          </a>
-        </div>     
-
-        <div class="proiecte">
-          <h2>Clock</h2>
-          <a href="animations/clock/index.html" target="_blank">
-            <img src="animations/clock.jpeg" alt="clock" class="anim">
-          </a>
-        </div> 
-
-        <div class="proiecte">
-          <h2>Traffic Lights</h2>
-          <a href="animations/traffic/index.html" target="_blank">
-            <img src="animations/traffic.jpeg" alt="traffic" class="anim">
-          </a>
+        <div id="Details2" class="tab" style="display: none;">
+          <p>A website made for sharing music. Like and comment to posts of your favorite musician and artist.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/php.png">
+            <img src="utilities/mysql.png">
+            <img src="utilities/js.png">
+          </div>
         </div>
 
       </div>
 
-    </div>
+      <div class="work">
+        <div class="top-side">
+          <h3>Desktop</h3>
+          <div class="flex">
+            <button class="tablink" onclick="TabOpener(event,'Iframe3')">Iframe</button>
+            <button class="tablink" onclick="TabOpener(event,'Details3')">Details</button>
+          </div>
+        </div>
 
-    <div class="third-section">
-      <h1 id="about-me">#About Me</h1>
-      <p>The main stacks i am working with are VANILLA HTML<img src="html.png" alt="HTML"> , VANILLA JAVASCRIPT<img src="js.png" alt="JAVASCRIPT"> , VANILLA CSS<img src="css.png" alt="CSS">
-      and SASS<img src="sass.png" alt="SASS">.</p>
-      <p>I am also learning Angular<img src="angular.png" alt="Angular"> , PHP<img src="php.png" alt="PHP"> and MySQL<img src="mysql.png" alt="MYSQL">.</p>
-    </div>
+        <div id="Iframe3" class="tab" style="display: none;">
+          <iframe src="http://localhost/Desktop" frameborder="0"></iframe>
+        </div>
+      
+        <div id="Details3" class="tab" style="display: none;">
+          <p>A replica of Windows 11 interface. Browse the web or edit a website inside your browser.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/js.png">
+          </div>
+        </div>
 
-    <div class="fourth-section">
-      <h1 id="degree">#Degree</h1>
-      <p>I am currently studying Electronics, Telecommunications and Information Technology at TUIASI.</p>
-    </div>
+      </div>
 
-    <div class="fifth-section">
-      <h1 id="contact">#Contact</h1>
-  
+      <div class="work">
+        <div class="top-side">
+          <h3>Music Store</h3>
+          <div class="flex">
+            <button class="tablink" onclick="TabOpener(event,'Iframe4')">Iframe</button>
+            <button class="tablink" onclick="TabOpener(event,'Details4')">Details</button>
+          </div>
+        </div>
+
+        <div id="Iframe4" class="tab" style="display: none;">
+          <iframe src="http://localhost/music%20store" frameborder="0"></iframe>
+        </div>
+      
+        <div id="Details4" class="tab" style="display: none;">
+          <p>A shopping website where the user can find digital music and vinyls. Search and buy your favorite music.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/php.png">
+            <img src="utilities/mysql.png">
+            <img src="utilities/js.png">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="work">
+        <div class="top-side">
+          <h3>Audiophile</h3>
+          <div class="flex">
+            <button class="tablink" onclick="TabOpener(event,'Iframe5')">Iframe</button>
+            <button class="tablink" onclick="TabOpener(event,'Details5')">Details</button>
+          </div>
+        </div>
+
+        <div id="Iframe5" class="tab" style="display: none;">
+          <iframe src="http://localhost/Audiophile" frameborder="0"></iframe>
+        </div>
+      
+        <div id="Details5" class="tab" style="display: none;">   
+          <p>Audiophile is an ecommerce website. Go and buy the earphones with the audio quality you always desired.</p>       
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="section6" class="section">
+      <h2>Contact</h2>
       <div class="social-btns">
-        <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100057258791578"><i class="fa fa-facebook"></i></a>
-        <a class="btn linkedin" href="https://www.linkedin.com/in/radu-andrei-gorcea-9232a2225/"><i class="fa">&#xf0e1;</i></i></a>
-        <a class="btn reddit" href="#"><i class="fa fa-reddit"></i></a>
-        <a class="btn instagram" href="https://www.instagram.com/big._.niqqa.69/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a class="btn github" href="https://github.com/lamoo7"><i class="fa fa-github"></i></a>
+        <a target="_blank" class="btn facebook" href="https://www.facebook.com/profile.php?id=100057258791578"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" class="btn linkedin" href="https://www.linkedin.com/in/radu-andrei-gorcea-9232a2225/"><i class="fa-brands fa-linkedin"></i></a>
+        <a target="_blank" class="btn discord" href="#"><i class="fa-brands fa-discord"></i></a>
+        <a target="_blank" class="btn instagram" href="https://www.instagram.com/big._.niqqa.69/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" class="btn github" href="https://github.com/lamoo7"><i class="fa-brands fa-github"></i></a>
       </div>
+    </section>
 
-    </div>
-
-    <script>
-      var slideIndex = 0;
-      slide();
-
-      function slide() {
-        var i;
-        var x = document.getElementsByClassName("slider");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none"; 
-        }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1} 
-        x[slideIndex-1].style.display = "block"; 
-        setTimeout(slide, 3000); 
-      }
-
-
-      const hamburger = document.querySelector(".hamburger");
-      const layers = document.querySelectorAll(".hamburger span");
-
-      hamburger.addEventListener("click", (e) => {
-          layers.forEach((layer) => layer.classList.toggle("active"));
-          document.getElementById("menu").classList.toggle("show");
-      });
-
-
-      function openPage(pageName,elmnt,color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.backgroundColor = "";
-          tablinks[i].style.boxShadow = "";
-        }
-        document.getElementById(pageName).style.display = "grid";
-        elmnt.style.backgroundColor = color;
-        elmnt.style.boxShadow = "0 5px 30px rgb(0, 180, 180)";
-      }
-
-      document.getElementById("defaultOpen").click();
-    </script>
-  </body>
+    <footer>
+      <p>Mail <i class="fa-solid fa-envelope"></i> : radu.andrei787@gmail.com</p>
+    </footer>
+    
+    <script src="main.js"></script>
+  
+</body>
 </html>
