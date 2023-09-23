@@ -136,47 +136,19 @@ nav{
 
 #section3 {
   display: grid;
-  table {
+  #skills-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
     justify-self: center;
-    text-align: center;
-    width: 70%;
-    border-collapse: collapse;
-    td {
-      img {
-        width: 50px;
-        aspect-ratio: 1;
-      }
-      &:nth-child(3) {
-        width: 60%;
-      }
+    div { margin: 10px; }
+    div img {
+      width: 100px;
+      aspect-ratio: 1;
     }
-
-    .bar {
-      display: flex;
-      align-items: center;
-      height: 10px;
-      background-color: #00000020;
-      border-radius: 5px;
-
-      .color-bar {
-        height: 10px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        width: var(--i);
-        animation: move 3s 1 ease;
-      }
-
-      .circle {
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        margin-left: -5px;
-      }
-
-      // @keyframes move {
-      //   0% { width: 0;}
-      //   100% { width: var(--i);}
-      // }
+    div p {
+      text-align: center;
     }
   }
 }
@@ -185,8 +157,8 @@ nav{
   ul li i:before, ul li i:after, p {
     transition: all 0.25s ease-in-out;
   }
-  h2 {
-    font-size: 26px;
+  h4 {
+    font-size: large;
     line-height: 34px;
     letter-spacing: 1px;
     display: block;
@@ -208,7 +180,7 @@ nav{
       margin: 0;
       padding-bottom: 4px;
       padding-top: 18px;
-      border-top: 1px dotted #dce7eb;
+      border-top: 1px solid #dce7eb;
       animation: flipdown 0.5s ease both;
 
       &:last-of-type {
@@ -304,48 +276,136 @@ nav{
 }
 
 #section5{
-  .work{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  h4{
+    font-size: larger;
+    line-height: 34px;
+    letter-spacing: 1px;
+    background-color: #fefffa;
+    margin: 0;
+    span{ 
+      color: #0a7af8;
+    }
+  }
+
+  li {
+    margin-block: 10px;
+    img {
+      height: 20px;
+      width: 20px;
+      vertical-align: text-bottom;
+    }
+  }
+
+  div ul ul li span {
+    color: gray;
+  }
+
+  div {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
-    &:nth-child(even) {
-      flex-direction: row-reverse;
-    }
-    .wrap {
-      width: 100%;
-      aspect-ratio: 16/9;
-      padding: 0;
-      overflow: hidden;
-      iframe{
-        width: 200%;
-        height: 200%;
-        border: 0;
-        transform: scale(0.5);
-        transform-origin: center;
-      }
-    }
-    div{
-      display: grid;
-      place-items: center;
-      p { 
-        text-align: center;
-        margin-inline: 30px;
-      }
-      div {
-        display: inline-flex;
-        img{
-          width: 50px;
-          aspect-ratio: 1;
-          margin: 10px;
-        }
-      }
-    }
+    place-items: start;
+    padding-inline: auto;
   }
 }
 
 #section6{
+
+  .work {
+    display: flex;
+  }
+
+  .description{
+    margin-left: 3em;
+    margin-block: 2em;
+  }
+
+  .flex {
+    display: flex;
+    img {
+      width: 50px;
+      aspect-ratio: 1;
+      margin-inline: 5px;
+    }
+  }
+
+  .vertical-bar{
+    width: 3px;
+    background: #3b5998;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1em;
+  }
+  #last-bar{
+    background: transparent;
+  }
+
+  i{
+    aspect-ratio: 1;
+    background-color: white;
+    color: #dce7eb;
+    padding: 0.5em;
+    position: relative;
+    color: #3b5998;
+    border: currentColor 3px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    &::after{
+      content: attr(data-type);
+      position: absolute;
+      padding-left: 3em;
+      letter-spacing: 2px;
+      color: #1f1f1f;
+      font-weight: 400;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    line-height: 80px;
+  }
+  
+  .link {
+    margin-top: 1em;
+    color: #03349c;
+    text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    max-width: 250px;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    box-sizing: border-box;
+    transition: 300ms ease-in-out;
+  }
+  .link span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #3b5998;
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .link:hover {
+    color: #cfc2d8;
+  }
+  .link:hover span {
+    width: 225%;
+    height: 562.5px;
+  }
+  .link:active {
+    background-color: #13303b;
+  }
+}
+
+#section7{
   .social-btns{
     margin: auto;
     font-size: 0;

@@ -19,7 +19,8 @@
       <a class="menu-link" href="#section3">Skills</a>
       <a class="menu-link" href="#section4">Education</a>
       <a class="menu-link" href="#section5">Work</a>
-      <a class="menu-link" href="#section6">Contact</a>
+      <a class="menu-link" href="#section6">Projects</a>
+      <a class="menu-link" href="#section7">Contact</a>
     </nav>
     
     <section id="section1" class="section">
@@ -49,85 +50,53 @@
     
     <section id="section3" class="section">
       <h2>Skills</h2>
-      <table>
-        <tr>
-          <td><img src="utilities/html.png"></td>
-          <td>HTML</td>
-          <td> 
-            <div class="bar">
-              <div class="color-bar" style="--i: 95%; background-color: coral;"></div>
-              <div class="circle" style="background-color: coral;"></div>
-            </div>
-          </td>
-          <td>95%</td>
-        </tr>
-        <tr>
-          <td><img src="utilities/css.png"></td>
-          <td>CSS</td>
-          <td>            
-            <div class="bar">
-              <div class="color-bar" style="--i: 90%; background-color: #2b62ea;"></div>
-              <div class="circle" style="background-color: #2b62ea"></div>
-            </div>
-          </td>
-          <td>90%</td>
-        </tr>
-        <tr>
-          <td><img src="utilities/sass.png"></td>
-          <td>SCSS / SASS</td>
-          <td>            
-            <div class="bar">
-              <div class="color-bar" style="--i: 80%; background-color: #d0639d;"></div>
-              <div class="circle" style="background-color: #d0639d;"></div>
-            </div>
-          </td>
-          <td>80%</td>
-        </tr>
-        <tr>
-          <td><img src="utilities/js.png"></td>
-          <td>JavaScript</td>
-          <td>            
-            <div class="bar">
-              <div class="color-bar" style="--i: 80%; background-color: #f0dc4e;"></div>
-              <div class="circle" style="background-color: #f0dc4e;"></div>
-            </div>
-          </td>
-          <td>80%</td>
-        </tr>
-        <tr>
-          <td><img src="utilities/mysql.png"></td>
-          <td>MySQL</td>
-          <td>            
-            <div class="bar">
-              <div class="color-bar" style="--i: 70%; background-color: #4479a1;"></div>
-              <div class="circle" style="background-color: #4479a1;"></div>
-            </div>
-          </td>
-          <td>70%</td>
-        </tr>
-        <tr>
-          <td><img src="utilities/php.png"></td>
-          <td>PHP</td>
-          <td>            
-            <div class="bar">
-              <div class="color-bar" style="--i: 60%; background-color: #92a9ed;"></div>
-              <div class="circle" style="background-color: #92a9ed;"></div>
-            </div>
-          </td>
-          <td>60%</td>
-        </tr>
-        <tr>
-          <td><img src="utilities/angular.png"></td>
-          <td>Angular</td>
-          <td>            
-            <div class="bar">
-              <div class="color-bar" style="--i: 50%; background-color: #e23237;"></div>
-              <div class="circle" style="background-color: #e23237;"></div>
-            </div>
-          </td>
-          <td>50%</td>
-        </tr>
-      </table>
+
+      <div id="skills-flex">
+        <div>
+					<img src="utilities/html.png">
+					<p	style="color: coral;">HTML</p>
+				</div>
+        <div>
+					<img src="utilities/css.png">
+					<p	style="color: #2b62ea;">CSS</p>
+				</div>
+        <div>
+					<img src="utilities/sass.png">
+					<p	style="color: #d0639d;">SASS / SCSS</p>
+				</div>
+        <div>
+					<img src="utilities/js.png">
+					<p	style="color: #f0dc4e;">JavaScript</p>
+				</div>
+				<div>
+					<img src="utilities/ts.png">
+					<p	style="color: #017acb;">TypeScript</p>
+				</div>
+				<div>
+					<img src="utilities/node.png">
+					<p	style="color: #529f41;">Node.js</p>
+				</div>
+        <div>
+					<img src="utilities/angular.png">
+					<p	style="color: #e23237;">Angular</p>
+				</div>
+        <div>
+					<img src="utilities/php.png">
+					<p	style="color: #92a9ed;">PHP</p>
+				</div>
+        <div>
+					<img src="utilities/mysql.png">
+					<p	style="color: #4479a1;">MySQL</p>
+				</div>
+				<div>
+					<img src="utilities/laravel.svg">
+					<p	style="color: #ff2d20;">Laravel</p>
+				</div>
+        <div>
+          <img src="utilities/htmx.svg">
+          <p  style="color: #3d72d7;">HTMX</p>
+        </div>
+      </div>
     </section>
 
     <section id="section4" class="section">
@@ -143,106 +112,147 @@
         <li>
           <input type="checkbox" checked>
           <i></i>
-          <h2>Univeristy <span>2021 - present</span></h2>
+          <h4>Univeristy <span>2021 - present</span></h4>
           <p>Undergraduate at Faculty of Electronics, Telecommunications and Information Technology @ Technical Univeristy "Gheorghe Asachi" IASI</p>
         </li>
         <li>
           <input type="checkbox" checked>
           <i></i>
-          <h2>Highschool <span>2017 - 2021</span></h2>
+          <h4>Highschool <span>2017 - 2021</span></h4>
           <p>High School Diploma ( Mathematics and Computer Science ) at Colegiul Național Ștefan cel Mare din Târgu Neamț</p>
         </li>
       </ul>
-          
     </section>
 
-    <section id="section5" class="section">
-      <h2>Work</h2>
+		<section id="section5" class="section">
+			<h2>Work</h2>
 
-      <div class="work">
-        <div>
-          <h1>Chat App</h1>
-          <p>A website made for chatting, where any user can upload messages and pictures, and create up to 3 chatting rooms. </p>
-          <div>
-            <img src="utilities/php.png">
-            <img src="utilities/mysql.png">
-            <img src="utilities/js.png">
-            <img src="utilities/html.png">
-            <img src="utilities/css.png">
-          </div>
-        </div>
-        <div class="wrap">
-          <iframe src="http://localhost/chatapp/index.php"></iframe>
-        </div>
+			<div>
+
+				<ul>
+					<li><h4>Internship @ <span>Pentalog</span></h4></li>
+					<ul>
+						<li><span>Location:</span> Iasi, Romania</li>
+						<li><span>Duration:</span> 17 July - 15 Sept 2023</li>
+						<li><span>Project:</span> Blogpost Website using <span style="color: #ff2d20;">Laravel</span> <img src="utilities/laravel.svg"></li>
+					</ul>
+				</ul>
+				<img src="utilities/Pentalog.png">
+
+			</div>
+
+      <div>
+        <ul>
+          <li><h4>Personal projects</h4></li>
+          <ul>
+            <li><span>Duration:</span> 2017 - present</li>
+            <li><span>Github:</span> <a href="https://github.com/lamoo7">https://github.com/lamoo7</a></li>
+          </ul>
+        </ul>
       </div>
 
-      <div class="work">
-        <div>
-          <h1>Music Share</h1>
-          <p>A website made for sharing music. Like and comment to posts of your favorite musician and artist.</p>
-          <div>
-            <img src="utilities/php.png">
-            <img src="utilities/mysql.png">
-            <img src="utilities/html.png">
-            <img src="utilities/js.png">
-            <img src="utilities/sass.png">
-          </div>
-        </div>
-        
-        <div class="wrap">
-          <iframe src="http://localhost/musicapp/index.php"></iframe>
-        </div>
-      </div>
-
-      <div class="work">
-        <div>
-          <h1>Desktop</h1>
-          <p>A replica of Windows 11 interface. Browse the web or edit a website inside your browser.</p>
-          <div>
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-            <img src="utilities/js.png">
-          </div>
-        </div>
-        <div class="wrap">
-          <iframe src="http://localhost/Desktop/index.html"></iframe>
-        </div>
-      </div>
-
-      <div class="work">
-        <div>
-          <h1>Music Store</h1>
-          <p>A shopping website where the user can find digital music and vinyls. Search and buy your favorite music.</p>
-          <div>
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-            <img src="utilities/php.png">
-            <img src="utilities/js.png">
-            <img src="utilities/mysql.png">
-          </div>
-        </div>
-
-        <div class="wrap">
-          <iframe src="http://localhost/music%20store/index.php"></iframe>
-        </div>
-      </div>
-
-      <div class="work">
-        <div>
-          <h1>Audiophile</h1>
-          <p>Audiophile is an ecommerce website. Go and buy the earphones with the audio quality you always desired. </p>
-          <div>
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-          </div>
-        </div>
-        <div class="wrap">
-          <iframe src="http://localhost/Audiophile/index.html"></iframe>
-        </div>
-      </div>
-    </section>
+		</section>
 
     <section id="section6" class="section">
+      <h2>Projects</h2>
+    
+			<div class="work">
+        <div class="vertical-bar">
+			  	<i class="fa-regular fa-comments" data-type="chatting&nbsp;app"></i>
+			  </div>
+        <div class="description">
+          <p>A website made for chatting, where any user can upload messages and pictures, and create up to 3 chatting rooms.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/css.png">
+            <img src="utilities/js.png">
+            <img src="utilities/php.png">
+            <img src="utilities/mysql.png">
+          </div>
+          <a class="link" href="#">Go to the webpage<span></span></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="vertical-bar">
+			  	<i class="fa-solid fa-music" data-type="music&nbsp;share&nbsp;app"></i>
+			  </div>
+        <div class="description">
+          <p>A website made for sharing music. Like and comment to posts of your favorite musician and artist.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/js.png">
+            <img src="utilities/php.png">
+            <img src="utilities/mysql.png">
+          </div>
+          <a class="link" href="#">Go to the webpage<span></span></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="vertical-bar">
+          <i class="fa-solid fa-desktop" data-type="desktop"></i>
+			  </div>
+        <div class="description">
+          <p>A replica of Windows 11 interface. Browse the web or edit a website inside your browser.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/js.png">
+          </div>
+          <a class="link" href="#">Go to the webpage<span></span></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="vertical-bar">
+          <i class="fa-solid fa-record-vinyl" data-type="vinyl&nbsp;store"></i>
+			  </div>
+        <div class="description">
+          <p>A shopping website where the user can find digital music and vinyls .</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/php.png">
+            <img src="utilities/js.png">
+          </div>
+          <a class="link" href="#">Go to the webpage<span></span></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="vertical-bar">
+          <i class="fa-solid fa-headphones-simple" data-type="audiophile"></i>
+			  </div>
+        <div class="description">
+          <p>Audiophile is an ecommerce website. Go and buy the earphones with the audio quality you always desired.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+          </div>
+          <a class="link" href="#">Go to the webpage<span></span></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <div class="vertical-bar" id="last-bar">
+          <i class="fa-solid fa-gamepad" data-type="gamerspace"></i>
+			  </div>
+        <div class="description">
+          <p>Gamerspace is a website where you can meet people who play the same games as you. Make new friends, compete with other gamers, etc.</p>
+          <div class="flex">
+            <img src="utilities/html.png">
+            <img src="utilities/sass.png">
+            <img src="utilities/js.png">
+            <img src="utilities/htmx.svg">
+          </div>
+          <a class="link" href="#">Go to the webpage<span></span></a>
+        </div>
+      </div>
+		</section>
+
+    <section id="section7" class="section">
       <h2>Contact</h2>
       <div class="social-btns">
         <a target="_blank" class="btn facebook" href="https://www.facebook.com/profile.php?id=100057258791578"><i class="fa-brands fa-facebook"></i></a>
@@ -259,5 +269,5 @@
     
     <script src="main.js"></script>
   
-</body>
+	</body>
 </html>
