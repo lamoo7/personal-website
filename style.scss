@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 
 html{
   scroll-behavior: smooth;
@@ -23,12 +25,15 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    scroll-behavior: smooth;
     section{
         margin-left: 280px;
         padding: 20px;
     }
 }
-
+.section {
+  scroll-margin-top: 20vh;
+}
 .flex {
   display: flex;
 }
@@ -131,6 +136,7 @@ nav{
     justify-self: center;
     width: 60%;
     text-align: justify;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
@@ -302,25 +308,44 @@ nav{
 
   div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: start;
-    padding-inline: auto;
+    grid-template-columns: auto 400px;
+    justify-items: start;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    gap: 20px;
   }
+}
+
+#diploma {
+  width: 400px;
 }
 
 #section6{
 
   .work {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .screen {
+    width: 60%;
+    border-radius: 0.5em;
+    margin-block: 0.5em;
   }
 
   .description{
     margin-left: 3em;
     margin-block: 2em;
+    display: flex;
+    flex-direction: column;
+
+    p{ margin-right: 1em; }
   }
 
   .flex {
-    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
     img {
       width: 50px;
       aspect-ratio: 1;
@@ -330,7 +355,6 @@ nav{
 
   .vertical-bar{
     width: 3px;
-    background: #3b5998;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -368,7 +392,7 @@ nav{
   }
   
   .link {
-    margin-top: 1em;
+    margin-top: auto;
     color: #03349c;
     text-align: center;
     position: relative;
@@ -433,11 +457,11 @@ nav{
      .btn.linkedin .fa-brands {
        color: #0077b5;
      }
-     .btn.discord:before {
-       background-color: #7289da;
+     .btn.codepen:before {
+       background-color: #000;
      }
-     .btn.discord .fa-brands {
-       color: #7289da;
+     .btn.codepen .fa-brands {
+       color: #000;
      }
      .btn.instagram:before {
        background-color: #f26798;
@@ -502,23 +526,51 @@ footer {
 
 @media only screen and (max-width: 1400px) {
   .work {
-    flex-direction: column !important;
+    flex-direction: column;
+  }
+
+  .link { margin-top: 1em !important; }
+
+  .description p {
+    margin-right: 0;
+  }
+
+  .screen {
+    width: 100% !important;
+    margin-bottom: 3em !important;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   nav { display: none; }
+
   section, footer {
     margin-left: 0 !important;
     padding: 0 !important;
     h2 { margin-left: 5px; }
   }
+
   footer { width: 100%; }
+
+  #skills-flex {
+    width: auto !important;
+  }
+  
+  #section5 div {
+    grid-template-columns: 1fr;
+    img { justify-self: center }
+  }
 }
 
 @media only screen and (max-width: 700px) {
   p { font-size: smaller; }
-  td:nth-child(2n) { display: none; }
-  #section3 { display: block; }
-  .bar { width: 150%; }
+  .description{
+    margin-left: 15px !important;
+  }
+  #diploma{
+    width: 100%;
+  }
+  .vertical-bar {
+    margin-left: 25px !important;
+  }
 }
