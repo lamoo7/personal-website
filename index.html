@@ -1,288 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Website • Gorcea Radu Andrei</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="utilities/projects.png">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c48f0d09a5.js" crossorigin="anonymous"></script>
-  </head>
-  
-  <body>
 
-    <nav>
-      <img src="utilities/me.jpg" alt="me">
-      <h3>Radu Andrei Gorcea</h3>
-      <a class="menu-link active" href="#section1">Home</a>
-      <a class="menu-link" href="#section2">About</a>
-      <a class="menu-link" href="#section3">Skills</a>
-      <a class="menu-link" href="#section4">Education</a>
-      <a class="menu-link" href="#section5">Work</a>
-      <a class="menu-link" href="#section6">Projects</a>
-      <a class="menu-link" href="#section7">Contact</a>
-    </nav>
-    
-    <section id="section1" class="section">
-      <div class="wrap">
-        <h1>Hi! My name is Radu</h1>
-        <div class="flex">
-          <h1>I am a </h1>
-          <div class="slider">
-            <h1>Student</h1>
-          </div>
-          <div class="slider">
-            <h1>Web Developer</h1>
-          </div>
-          <div class="slider">
-            <h1>Creative Mind</h1>
-          </div>
-          <div class="slider">
-            <h1>Ardent Programmer</h1>
-          </div>
-        </div>
-        <h1>And I love building websites</h1>
-        <a href="utilities/CV.pdf" download>download cv <i class="fa-solid fa-download"></i> </a>
-      </div>
-    </section>
-    
-    <section id="section2" class="section">
-      <h2>About</h2>
-      <p>I'm a passionate and motivated Engineering student with a strong interest in web
-        development. I excel at problem-solving and quickly grasp new concepts and
-        technologies. As a team player, I constantly seek growth opportunities. My goal is to
-        leverage my technical skills to effectively bring to life the projects I envision.</p>
-    </section>
-    
-    <section id="section3" class="section">
-      <h2>Skills</h2>
+<head>
+	<meta charset="UTF-8">
+	<title>Website • Radu Andrei Gorcea</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/c48f0d09a5.js" crossorigin="anonymous"></script>
+</head>
 
-      <div id="skills-flex">
-        <div>
+<body>
+	<div class="sidebar">
+		<div class="user">
+			<img src="utilities/me.jpg" alt="user photo" class="user-photo">
+			<p class="user-name">Radu Andrei Gorcea</p>
+			<span class="user-mail">radu.andrei787@gmail.com</span>
+		</div>
+		<div class="sidebar-menu">
+			<a href="#section1" class="sidebar-menu__link active">Home</a>
+			<a href="#section2" class="sidebar-menu__link">About</a>
+			<a href="#section3" class="sidebar-menu__link">Skills</a>
+			<a href="#section4" class="sidebar-menu__link">Education</a>
+			<a href="#section5" class="sidebar-menu__link">Work</a>
+			<a href="#section6" class="sidebar-menu__link">Projects</a>
+			<a href="#section7" class="sidebar-menu__link">Contact</a>
+		</div>
+	</div>
+	<main class="main">
+
+		<section id="section1">
+
+			<h1>Home</h1>
+			<div id="slider">
+				<p>Hi! I'm Radu!</p>
+				<span>
+					<p>I excel at</p>
+					<p id="sliderValue"></p>
+				</span>
+			</div>
+
+			<br>
+			<br>
+
+			<a href="utilities/CV.pdf" download>Download CV <i class="fa-solid fa-download"></i></a>
+
+			<br>
+			<br>
+
+		</section>
+
+		<section id="section2">
+
+			<h1>About</h1>
+			<p>I'm a passionate and motivated Engineering student with a strong interest in web
+				development. I excel at problem-solving and quickly grasp new concepts and
+				technologies. As a team player, I constantly seek growth opportunities. My goal is to
+				leverage my technical skills to effectively bring to life the projects I envision.</p>
+
+		</section>
+
+		<section id="section3">
+
+			<h1>Skills</h1>
+			<div id="skills-flex">
+				<div>
 					<img src="utilities/html.png">
-					<p	style="color: coral;">HTML</p>
+					<p>HTML</p>
 				</div>
-        <div>
+				<div>
 					<img src="utilities/css.png">
-					<p	style="color: #2b62ea;">CSS</p>
+					<p>CSS</p>
 				</div>
-        <div>
+				<div>
 					<img src="utilities/sass.png">
-					<p	style="color: #d0639d;">SASS / SCSS</p>
+					<p>SASS / SCSS</p>
 				</div>
-        <div>
+				<div>
 					<img src="utilities/js.png">
-					<p	style="color: #f0dc4e;">JavaScript</p>
+					<p>JavaScript</p>
 				</div>
 				<div>
 					<img src="utilities/ts.png">
-					<p	style="color: #017acb;">TypeScript</p>
+					<p>TypeScript</p>
 				</div>
 				<div>
 					<img src="utilities/node.png">
-					<p	style="color: #529f41;">Node.js</p>
+					<p>Node.js</p>
 				</div>
-        <div>
+				<div>
 					<img src="utilities/angular.png">
-					<p	style="color: #e23237;">Angular</p>
+					<p>Angular</p>
 				</div>
-        <div>
+				<div>
 					<img src="utilities/php.png">
-					<p	style="color: #92a9ed;">PHP</p>
+					<p>PHP</p>
 				</div>
-        <div>
+				<div>
 					<img src="utilities/mysql.png">
-					<p	style="color: #4479a1;">MySQL</p>
+					<p>MySQL</p>
 				</div>
 				<div>
 					<img src="utilities/laravel.svg">
-					<p	style="color: #ff2d20;">Laravel</p>
+					<p>Laravel</p>
 				</div>
-        <div>
-          <img src="utilities/htmx.svg">
-          <p  style="color: #3d72d7;">HTMX</p>
-        </div>
-      </div>
-    </section>
+				<div>
+					<div id="alt"><<span>/</span>></div>
+					<p>HTMX</p>
+				</div>
+				<div>
+					<img src="utilities/git.png">
+					<p>Git</p>
+				</div>
+			</div>
+		</section>
 
-    <section id="section4" class="section">
-      <h2>Education</h2>
-      <p>I am currently a student at the Faculty of Electronics, Telecommunications, and Information Technology (ETTI)
-         at the Technical University 'Gheorghe Asachi' of Iasi (TUIASI). As a student in the ETTI program, I am immersed in a dynamic
-          learning environment that combines theoretical knowledge with hands-on practical experience. The faculty's comprehensive 
-          curriculum equips me with a solid foundation in electronics, telecommunications, and information technology. With access to 
-          state-of-the-art facilities and dedicated faculty members, I am constantly challenged and inspired to explore cutting-edge 
-          technologies and develop innovative solutions.</p>
+		<section id="section4">
 
-      <ul>
-        <li>
-          <input type="checkbox" checked>
-          <i></i>
-          <h4>Univeristy <span>2021 - present</span></h4>
-          <p>Undergraduate at Faculty of Electronics, Telecommunications and Information Technology @ Technical Univeristy "Gheorghe Asachi" IASI</p>
-        </li>
-        <li>
-          <input type="checkbox" checked>
-          <i></i>
-          <h4>Highschool <span>2017 - 2021</span></h4>
-          <p>High School Diploma ( Mathematics and Computer Science ) at Colegiul Național Ștefan cel Mare din Târgu Neamț</p>
-        </li>
-      </ul>
-    </section>
+			<h1>Education</h1>
+			<ul>
+				<li>
+					<input type="checkbox" checked>
+					<i></i>
+					<h4>Univeristy <span>2021 - present</span></h4>
+					<p>Undergraduate at Faculty of Electronics, Telecommunications and Information Technology @
+						Technical Univeristy "Gheorghe Asachi" IASI</p>
+				</li>
+				<li>
+					<input type="checkbox" checked>
+					<i></i>
+					<h4>Highschool <span>2017 - 2021</span></h4>
+					<p>High School Diploma ( Mathematics and Computer Science ) at Colegiul Național Ștefan cel Mare din
+						Târgu Neamț</p>
+				</li>
+			</ul>
 
-		<section id="section5" class="section">
-			<h2>Work</h2>
+		</section>
 
+		<section id="section5">
+
+			<h1>Work</h1>
 			<div>
-
 				<ul>
-					<li><h4>Internship @ <span>Pentalog</span></h4></li>
+					<li>
+						<h4>Internship @ <span>Pentalog</span></h4>
+					</li>
 					<ul>
 						<li><span>Location:</span> Iasi, Romania</li>
 						<li><span>Duration:</span> 17 July - 15 Sept 2023</li>
-						<li><span>Project:</span> Designed and Developed a Blogpost Website using <span style="color: #ff2d20;">Laravel</span> <img src="utilities/laravel.svg"></li>
+						<li><span>Project:</span> Designed and Developed a Blogpost Website using <span
+								style="color: #ff2d20;">Laravel</span> <img src="utilities/laravel.svg"></li>
 					</ul>
 				</ul>
 
-        <img src="utilities/diploma.png" alt="diploma" id="diploma">
+				<img src="utilities/diploma.png" alt="diploma" id="diploma">
 
-        <ul>
-          <li><h4>Personal projects</h4></li>
-          <ul>
-            <li><span>Duration:</span> 2020 - present</li>
-            <li><span>Github:</span> <a href="https://github.com/lamoo7">https://github.com/lamoo7</a></li>
-            <li><span>Codepen:</span> <a href="https://codepen.io/lamoo7">https://codepen.io/lamoo7</a></li>
-          </ul>
-        </ul>
-
+				<ul>
+					<li>
+						<h4>Personal projects</h4>
+					</li>
+					<ul>
+						<li><span>Duration:</span> 2020 - present</li>
+						<li><span>Github:</span> <a href="https://github.com/lamoo7">https://github.com/lamoo7</a></li>
+						<li><span>Codepen:</span> <a href="https://codepen.io/lamoo7">https://codepen.io/lamoo7</a></li>
+					</ul>
+				</ul>
 			</div>
 
 		</section>
 
-    <section id="section6" class="section">
-      <h2>Projects</h2>
+		<section id="section6">
+			<h1>Projects</h1>
+			<p>Coming soon</p>
+		</section>
 
-      <div class="work">
-        <div class="vertical-bar" id="last-bar">
-          <i class="fa-solid fa-gamepad" data-type="gamerspace"></i>
-			  </div>
-        <div class="description">
-          <p>Gamerspace is a website where you can meet people who play the same games as you. Make new friends, compete with other gamers, etc.</p>
-          <div class="flex">
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-            <img src="utilities/js.png">
-            <img src="utilities/htmx.svg">
-          </div>
-          <a class="link" href="https://lamoo7.github.io/GamerSpace/" target="_blank">Go to the webpage<span></span></a>
-        </div>
-        <img class="screen" src="screens/GamerSpace.jpeg">
-      </div>
+		<section id="section7">
 
-      <div class="work">
-        <div class="vertical-bar">
-          <i class="fa-solid fa-record-vinyl" data-type="vinyl&nbsp;store"></i>
-			  </div>
-        <div class="description">
-          <p>A shopping website where the user can find digital music and vinyls .</p>
-          <div class="flex">
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-            <img src="utilities/php.png">
-            <img src="utilities/mysql.png">
-            <img src="utilities/htmx.svg">
-            <img src="utilities/js.png">
-          </div>
-          <a class="link" href="#" target="_blank">Go to the webpage<span></span></a>
-        </div>
-        <img class="screen" src="screens/Music Store.jpeg">
-      </div>
-
-      <div class="work">
-        <div class="vertical-bar">
-          <i class="fa-solid fa-headphones-simple" data-type="audiophile"></i>
-			  </div>
-        <div class="description">
-          <p>Audiophile is an ecommerce website. Go and buy the earphones with the audio quality you always desired.</p>
-          <div class="flex">
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-          </div>
-          <a class="link" href="https://lamoo7.github.io/Audiophile/" target="_blank">Go to the webpage<span></span></a>
-        </div>
-        <img class="screen" src="screens/Audiophile.jpeg">
-      </div>
-
-      <div class="work">
-        <div class="vertical-bar">
-          <i class="fa-solid fa-desktop" data-type="desktop"></i>
-			  </div>
-        <div class="description">
-          <p>A replica of Windows 11 interface. Browse the web or edit a website inside your browser.</p>
-          <div class="flex">
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-            <img src="utilities/js.png">
-          </div>
-          <a class="link" href="https://lamoo7.github.io/Desktop/" target="_blank">Go to the webpage<span></span></a>
-        </div>
-        <img class="screen" src="screens/Desktop.jpeg">
-      </div>
-    
-			<div class="work">
-        <div class="vertical-bar">
-			  	<i class="fa-regular fa-comments" data-type="chatting&nbsp;app"></i>
-			  </div>
-        <div class="description">
-          <p>A website made for chatting, where any user can upload messages and pictures, and create up to 3 chatting rooms.</p>
-          <div class="flex">
-            <img src="utilities/html.png">
-            <img src="utilities/css.png">
-            <img src="utilities/js.png">
-            <img src="utilities/php.png">
-            <img src="utilities/mysql.png">
-          </div>
-          <a class="link" href="#" target="_blank">Go to the webpage<span></span></a>
-        </div>
-        <img class="screen" src="screens/ChatApp.jpeg">
-      </div>
-
-      <div class="work">
-        <div class="vertical-bar">
-			  	<i class="fa-solid fa-music" data-type="music&nbsp;share&nbsp;app"></i>
-			  </div>
-        <div class="description">
-          <p>A website made for sharing music. Like and comment to posts of your favorite musician and artist.</p>
-          <div class="flex">
-            <img src="utilities/html.png">
-            <img src="utilities/sass.png">
-            <img src="utilities/js.png">
-            <img src="utilities/php.png">
-            <img src="utilities/mysql.png">
-          </div>
-          <a class="link" href="#" target="_blank">Go to the webpage<span></span></a>
-        </div>
-        <img class="screen" src="screens/MusicApp.jpeg">
-      </div>
+			<h1>Contact</h1>
+			
+			<div class="social-btns">
+				<a target="_blank" class="btn facebook" href="https://www.facebook.com/profile.php?id=100057258791578"><i class="fa-brands fa-facebook"></i></a>
+				<span>/Radu Andrei</span>
+				<a target="_blank" class="btn linkedin"	href="https://www.linkedin.com/in/radu-andrei-gorcea-9232a2225/"><i	class="fa-brands fa-linkedin"></i></a>
+				<span>/Radu-Andrei Gorcea</span>
+				<a target="_blank" class="btn codepen" href="https://codepen.io/lamoo7"><i class="fa-brands fa-codepen"></i></a>
+				<span>@lamoo7</span>
+				<a target="_blank" class="btn instagram" href="https://www.instagram.com/radu.andrei787/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<span>@radu.andrei787</span>
+				<a target="_blank" class="btn github" href="https://github.com/lamoo7"><i class="fa-brands fa-github"></i></a>
+				<span>/lamoo7</span>
+			</div>
+			
 
 		</section>
 
-    <section id="section7" class="section">
-      <h2>Contact</h2>
-      <div class="social-btns">
-        <a target="_blank" class="btn facebook" href="https://www.facebook.com/profile.php?id=100057258791578"><i class="fa-brands fa-facebook"></i></a>
-        <a target="_blank" class="btn linkedin" href="https://www.linkedin.com/in/radu-andrei-gorcea-9232a2225/"><i class="fa-brands fa-linkedin"></i></a>
-        <a target="_blank" class="btn codepen" href="https://codepen.io/lamoo7"><i class="fa-brands fa-codepen"></i></a>
-        <a target="_blank" class="btn instagram" href="https://www.instagram.com/big._.niqqa.69/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a target="_blank" class="btn github" href="https://github.com/lamoo7"><i class="fa-brands fa-github"></i></a>
-      </div>
-    </section>
+	</main>
 
-    <footer>
-      <p>Mail <i class="fa-solid fa-envelope"></i> : radu.andrei787@gmail.com</p>
-    </footer>
-    
-    <script src="main.js"></script>
-  
-	</body>
+	<script src="script.js"></script>
+</body>
+
 </html>
