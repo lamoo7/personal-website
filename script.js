@@ -47,7 +47,6 @@ function isElementInMiddle(element) {
   const elementRect = element.getBoundingClientRect();
   const middleOfScreen = window.innerHeight / 2;
 
-  // Calculate the middle position of the element
   const elementMiddle = elementRect.top + elementRect.height / 2;
 
   return Math.abs(elementMiddle - middleOfScreen) < elementRect.height / 2;
@@ -64,3 +63,35 @@ function updateActiveLink() {
 
 window.addEventListener('scroll', updateActiveLink);
 window.addEventListener('load', updateActiveLink);
+
+function scrollToMiddle(targetId) {
+  const targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    const windowHeight = window.innerHeight;
+    const targetHeight = targetElement.offsetHeight;
+    const scrollOffset = targetElement.offsetTop - (windowHeight - targetHeight) / 2;
+    window.scrollTo({ top: scrollOffset, behavior: 'smooth' });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const sidebarLinks = document.querySelectorAll('.sidebar-menu__link');
+  sidebarLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const targetId = link.getAttribute('href');
+      scrollToMiddle(targetId);
+    });
+  });
+});
+
+document.getElementById("cards").onmousemove = e => {
+  for(const card of document.getElementsByClassName("card")) {
+    const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;
+
+    card.style.setProperty("--mouse-x", `${x}px`);
+    card.style.setProperty("--mouse-y", `${y}px`);
+  };
+}
