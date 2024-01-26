@@ -544,6 +544,7 @@ main section:nth-child(7)::before {
   border-radius: inherit;
   display: flex;
   flex-direction: column;
+	justify-content: space-between;
   flex-grow: 1;
   inset: 1px;
   padding: 10px;
