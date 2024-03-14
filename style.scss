@@ -24,7 +24,7 @@ html {
 
 $theme-bg-color: #0e0e0e;
 $theme-color: #dcddde;
-$theme-inactive-color: #5c5c5c;
+$theme-inactive-color: #7c7c7c;
 $body-font: "Poppins", sans-serif;
 $border-color: #252424;
 
@@ -181,6 +181,10 @@ main {
 		&:nth-child(7)::before {
 			content: "\f2bb";
 		}
+
+		&:nth-of-type(odd) h1:first-of-type {
+			text-align: right;
+		}
 	}
 }
 
@@ -266,6 +270,12 @@ main {
 			filter: hue-rotate(350deg);
 		}
 	}
+}
+
+//section2
+#section2 p{
+	max-width: 550px;
+	margin: 0 auto;
 }
 
 //section 3
@@ -528,7 +538,7 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel, $h
 		border-radius: 10px;
 		cursor: pointer;
 		display: flex;
-		min-height: 260px;
+		min-height: 280px;
 		flex-direction: column;
 		position: relative;
 		width: 300px;
@@ -573,6 +583,7 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel, $h
 			border-radius: inherit;
 			display: flex;
 			flex-direction: column;
+			justify-content: space-between;
 			flex-grow: 1;
 			inset: 1px;
 			padding: 10px;
@@ -607,7 +618,7 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel, $h
 		}
 	}
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1200px) {
 		#cards {
 			max-width: 1000px;
 			padding: 10px 0px;
@@ -615,7 +626,13 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel, $h
 
 		.card {
 			flex-shrink: 1;
-			width: calc(50% - 4px);
+			max-width: 70%;
+			margin: 0 auto;
+		}
+
+		.project-img {
+			height: 50%;
+			margin: 0 auto;
 		}
 	}
 
@@ -623,8 +640,7 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel, $h
 		.card {
 			height: 180px;
 		}
-
-		
+	
 
 		.card > h3 {
 			font-size: 0.9em;
@@ -733,7 +749,7 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel, $h
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 980px) {
 	.sidebar {
 		display: none;
 	}

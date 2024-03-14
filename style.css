@@ -54,7 +54,7 @@ body {
 }
 
 .sidebar-menu__link {
-  background-color: #5c5c5c;
+  background-color: #7c7c7c;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
@@ -92,7 +92,7 @@ body {
 
 .user-mail {
   margin-top: 6px;
-  color: #5c5c5c;
+  color: #7c7c7c;
   font-size: 14px;
 }
 
@@ -175,6 +175,9 @@ main section:nth-child(6)::before {
 main section:nth-child(7)::before {
   content: "\f2bb";
 }
+main section:nth-of-type(odd) h1:first-of-type {
+  text-align: right;
+}
 
 #slider {
   width: 600px;
@@ -243,7 +246,7 @@ main section:nth-child(7)::before {
   content: "";
   height: 75px;
   width: 180px;
-  background: #5c5c5c;
+  background: #7c7c7c;
   border-radius: 13px;
   z-index: -1;
   transition: 0.3s;
@@ -256,6 +259,11 @@ main section:nth-child(7)::before {
   50% {
     filter: hue-rotate(350deg);
   }
+}
+
+#section2 p {
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 #skills-flex {
@@ -348,7 +356,7 @@ main section:nth-child(7)::before {
   cursor: pointer;
 }
 #section4 h4 span {
-  color: #5c5c5c;
+  color: #7c7c7c;
 }
 #section4 ul {
   list-style: none;
@@ -389,7 +397,7 @@ main section:nth-child(7)::before {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 #section4 ul li p {
-  color: #5c5c5c;
+  color: #7c7c7c;
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 1px;
@@ -465,7 +473,7 @@ main section:nth-child(7)::before {
   vertical-align: text-bottom;
 }
 #section5 div ul ul li span {
-  color: #5c5c5c;
+  color: #7c7c7c;
 }
 #section5 div {
   display: grid;
@@ -512,7 +520,7 @@ main section:nth-child(7)::before {
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  min-height: 260px;
+  min-height: 280px;
   flex-direction: column;
   position: relative;
   width: 300px;
@@ -544,7 +552,7 @@ main section:nth-child(7)::before {
   border-radius: inherit;
   display: flex;
   flex-direction: column;
-	justify-content: space-between;
+  justify-content: space-between;
   flex-grow: 1;
   inset: 1px;
   padding: 10px;
@@ -574,14 +582,19 @@ main section:nth-child(7)::before {
   aspect-ratio: 1;
   height: 30px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #section6 #cards {
     max-width: 1000px;
     padding: 10px 0px;
   }
   #section6 .card {
     flex-shrink: 1;
-    width: calc(50% - 4px);
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  #section6 .project-img {
+    height: 50%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
@@ -688,7 +701,7 @@ main section:nth-child(7)::before {
   vertical-align: middle;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 980px) {
   .sidebar {
     display: none;
   }
