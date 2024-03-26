@@ -564,13 +564,18 @@ main section:nth-of-type(odd) h1:first-of-type {
      object-fit: contain;
   border-radius: 5px;
 }
-#section6 .card .card-content h3 {
+#section6 .card .card-content h3, #section6 .card .card-content h4{
   font-family: "Poppins", sans-serif;
   color: rgb(240, 240, 240);
   font-weight: 200;
   font-size: x-large;
   margin-block: 0.5em;
 }
+
+#section6 .card .card-content h4{
+  margin-block: 10px;
+}
+
 #section6 .card .card-content ul {
   padding: 0;
   list-style-type: none;
