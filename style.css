@@ -568,7 +568,6 @@ main section:nth-of-type(odd) h1:first-of-type {
   font-family: "Poppins", sans-serif;
   color: rgb(240, 240, 240);
   font-weight: 200;
-  font-size: x-large;
   margin-block: 0.5em;
 }
 
