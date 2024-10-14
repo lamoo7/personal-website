@@ -262,8 +262,9 @@ main section:nth-of-type(odd) h1:first-of-type {
 }
 
 #section2 p {
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
+  text-align: justify;
 }
 
 #skills-flex {
@@ -461,7 +462,10 @@ main section:nth-of-type(odd) h1:first-of-type {
   margin: 0;
   font-weight: 400;
 }
-#section5 h4 span {
+#section5 h4:nth-of-type(1) span {
+  color: #25e2cc;
+}
+#section5 ul:nth-of-type(2) h4 span {
   color: #0a7af8;
 }
 #section5 li {
@@ -485,7 +489,7 @@ main section:nth-of-type(odd) h1:first-of-type {
   margin-inline: auto;
   gap: 20px;
 }
-#section5 #diploma {
+#section5 #pic {
   width: 300px;
 }
 @media only screen and (max-width: 1000px) {
