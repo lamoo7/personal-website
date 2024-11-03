@@ -28,6 +28,10 @@ $theme-inactive-color: #7c7c7c;
 $body-font: "Poppins", sans-serif;
 $border-color: #252424;
 
+.flex {
+  display: flex;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -51,7 +55,7 @@ body {
   flex-shrink: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 50px;
+  padding: 25px;
   position: fixed;
 }
 
@@ -98,7 +102,7 @@ body {
 }
 
 main {
-  margin-left: 300px;
+  margin-left: 250px;
   width: 100%;
   display: grid;
   place-items: center;
@@ -298,7 +302,7 @@ $git: #de4c36;
   justify-content: space-evenly;
   flex-wrap: wrap;
   justify-self: center;
-  gap: 10px;
+  gap: 15px;
 
   div img,
   div #alt {
@@ -525,147 +529,127 @@ $colors: $html, $css, $scss, $js, $ts, $node, $angular, $php, $sql, $laravel,
 
 //section 6
 #section6 {
+  $box-height: 15em;
+
+  @mixin gradient-overlay($image-url) {
+    background-image: url($image-url),
+      linear-gradient(135deg, #000 20%, transparent);
+  }
+
   p {
     float: right;
   }
 
-  $card-color: rgb(23, 23, 23);
-
-  #cards {
-    display: flex;
-    flex-wrap: wrap;
+  //TECH USED FOR PROJECTS
+  .flex {
     gap: 8px;
-    width: 100%;
-    justify-content: center;
 
-    &:hover > .card::after {
-      opacity: 1;
+    img {
+      aspect-ratio: 1;
+      height: 35px;
+      width: 35px;
     }
   }
 
-  .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    cursor: pointer;
+  .box-container {
     display: flex;
-    min-height: 280px;
     flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .box {
     position: relative;
-    width: 300px;
+    height: $box-height;
 
-    &:hover::before {
-      opacity: 1;
-    }
+    display: grid;
+    grid-template-rows: min-content;
 
-    &::before,
-    &::after {
-      border-radius: inherit;
-      content: "";
-      height: 100%;
-      left: 0px;
-      opacity: 0;
-      position: absolute;
-      top: 0px;
-      transition: opacity 500ms;
-      width: 100%;
-    }
+    transition: all 0.25s ease;
+    width: 70%;
+    padding: 1em;
 
-    &::before {
-      background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255, 255, 255, 0.06),
-        transparent 40%
-      );
-      z-index: 3;
-    }
-
-    &::after {
-      background: radial-gradient(
-        600px circle at var(--mouse-x) var(--mouse-y),
-        rgba(255, 255, 255, 0.4),
-        transparent 40%
-      );
-      z-index: 1;
-    }
-
-    .card-content {
-      background-color: $card-color;
-      border-radius: inherit;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-grow: 1;
-      inset: 1px;
-      padding: 10px;
-      position: absolute;
-      z-index: 2;
-
-      img.project-img {
-        object-fit: contain;
-        border-radius: 5px;
-      }
-
-      h3 {
-        font-family: $body-font;
-        color: rgb(240, 240, 240);
-        font-weight: 200;
-        font-size: x-large;
-        margin-block: 0.5em;
-      }
-
-      h4 {
-        font-family: $body-font;
-        color: rgb(240, 240, 240);
-        font-weight: 200;
-        margin-block: 0.5em;
-      }
-
-      ul {
-        padding: 0;
-        list-style-type: none;
-        display: flex;
-        gap: 5px;
-        margin: 0;
-
-        li img {
-          aspect-ratio: 1;
-          height: 30px;
-        }
-      }
-    }
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
   }
 
-  @media (max-width: 1200px) {
-    #cards {
-      max-width: 1000px;
-      padding: 10px 0px;
-    }
-
-    .card {
-      flex-shrink: 1;
-      margin: 0 auto;
-    }
-
-    .project-img {
-      height: 50%;
-      margin: 0 auto;
-    }
+  //BACKGROUNDS FOR PROJECTS
+  .gamerspace {
+    @include gradient-overlay("screens/GamerSpace.jpeg");
   }
 
-  @media (max-width: 500px) {
-    .card {
-      height: 180px;
-    }
-
-    .card > h3 {
-      font-size: 0.9em;
-    }
+  .chatterbox {
+    @include gradient-overlay("screens/ChatApp.jpeg");
   }
 
-  @media (max-width: 320px) {
-    .card {
-      width: 100%;
-    }
+  .vinyl-vault {
+    @include gradient-overlay("screens/Music Store.jpeg");
+  }
+
+  .beathive {
+    @include gradient-overlay("screens/MusicApp.jpeg");
+  }
+
+  .audiophile {
+    @include gradient-overlay("screens/Audiophile.jpeg");
+  }
+
+  .box:has(+ .box:hover),
+  .box:hover + .box {
+    height: calc($box-height + $box-height * 0.1);
+    width: 80%;
+  }
+
+  .box:hover {
+    height: calc($box-height + $box-height * 0.2);
+    width: 90%;
+  }
+
+  //GITHUB BUTTON
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+  body {
+    font-family: system-ui;
+    background: #ddeefc;
+  }
+
+  .github-btn-box {
+    justify-self: end;
+    align-self: flex-end;
+    z-index: 999;
+    width: 60px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .github-btn-box a i {
+    font-size: 30px;
+  }
+
+  .github-btn-box a {
+    background: #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 15px;
+  }
+
+  .github-btn-box:hover {
+    width: 195px;
   }
 }
 

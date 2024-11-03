@@ -20,6 +20,10 @@ html::-webkit-scrollbar-thumb {
           user-select: none;
 }
 
+.flex {
+  display: flex;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -43,7 +47,7 @@ body {
   flex-shrink: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 50px;
+  padding: 25px;
   position: fixed;
 }
 
@@ -97,7 +101,7 @@ body {
 }
 
 main {
-  margin-left: 300px;
+  margin-left: 250px;
   width: 100%;
   display: grid;
   place-items: center;
@@ -272,7 +276,7 @@ main section:nth-of-type(odd) h1:first-of-type {
   justify-content: space-evenly;
   flex-wrap: wrap;
   justify-self: center;
-  gap: 10px;
+  gap: 15px;
 }
 #skills-flex div img,
 #skills-flex div #alt {
@@ -506,118 +510,99 @@ main section:nth-of-type(odd) h1:first-of-type {
   }
 }
 
+#section6 {
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+}
 #section6 p {
   float: right;
 }
-#section6 #cards {
-  display: flex;
-  flex-wrap: wrap;
+#section6 .flex {
   gap: 8px;
-  width: 100%;
-  justify-content: center;
 }
-#section6 #cards:hover > .card::after {
-  opacity: 1;
-}
-#section6 .card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  min-height: 280px;
-  flex-direction: column;
-  position: relative;
-  width: 300px;
-}
-#section6 .card:hover::before {
-  opacity: 1;
-}
-#section6 .card::before, #section6 .card::after {
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: opacity 500ms;
-  width: 100%;
-}
-#section6 .card::before {
-  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40%);
-  z-index: 3;
-}
-#section6 .card::after {
-  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4), transparent 40%);
-  z-index: 1;
-}
-#section6 .card .card-content {
-  background-color: rgb(23, 23, 23);
-  border-radius: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  inset: 1px;
-  padding: 10px;
-  position: absolute;
-  z-index: 2;
-}
-#section6 .card .card-content img.project-img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 5px;
-}
-#section6 .card .card-content h3 {
-  font-family: "Poppins", sans-serif;
-  color: rgb(240, 240, 240);
-  font-weight: 200;
-  font-size: x-large;
-  margin-block: 0.5em;
-}
-#section6 .card .card-content h4 {
-  font-family: "Poppins", sans-serif;
-  color: rgb(240, 240, 240);
-  font-weight: 200;
-  margin-block: 0.5em;
-}
-#section6 .card .card-content ul {
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  gap: 5px;
-  margin: 0;
-}
-#section6 .card .card-content ul li img {
+#section6 .flex img {
   aspect-ratio: 1;
-  height: 30px;
+  height: 35px;
+  width: 35px;
 }
-@media (max-width: 1200px) {
-  #section6 #cards {
-    max-width: 1000px;
-    padding: 10px 0px;
-  }
-  #section6 .card {
-    flex-shrink: 1;
-    margin: 0 auto;
-  }
-  #section6 .project-img {
-    height: 50%;
-    margin: 0 auto;
-  }
+#section6 .box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
-@media (max-width: 500px) {
-  #section6 .card {
-    height: 180px;
-  }
-  #section6 .card > h3 {
-    font-size: 0.9em;
-  }
+#section6 .box {
+  position: relative;
+  height: 15em;
+  display: grid;
+  grid-template-rows: min-content;
+  transition: all 0.25s ease;
+  width: 70%;
+  padding: 1em;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
 }
-@media (max-width: 320px) {
-  #section6 .card {
-    width: 100%;
-  }
+#section6 .gamerspace {
+  background-image: url("screens/GamerSpace.jpeg"), linear-gradient(135deg, #000 20%, transparent);
+}
+#section6 .chatterbox {
+  background-image: url("screens/ChatApp.jpeg"), linear-gradient(135deg, #000 20%, transparent);
+}
+#section6 .vinyl-vault {
+  background-image: url("screens/Music Store.jpeg"), linear-gradient(135deg, #000 20%, transparent);
+}
+#section6 .beathive {
+  background-image: url("screens/MusicApp.jpeg"), linear-gradient(135deg, #000 20%, transparent);
+}
+#section6 .audiophile {
+  background-image: url("screens/Audiophile.jpeg"), linear-gradient(135deg, #000 20%, transparent);
+}
+#section6 .box:has(+ .box:hover),
+#section6 .box:hover + .box {
+  height: 16.5em;
+  width: 80%;
+}
+#section6 .box:hover {
+  height: 18em;
+  width: 90%;
+}
+#section6 body {
+  font-family: system-ui;
+  background: #ddeefc;
+}
+#section6 .github-btn-box {
+  justify-self: end;
+  align-self: flex-end;
+  z-index: 999;
+  width: 60px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+#section6 .github-btn-box a i {
+  font-size: 30px;
+}
+#section6 .github-btn-box a {
+  background: #1f1f1f;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 16px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: 15px;
+}
+#section6 .github-btn-box:hover {
+  width: 195px;
 }
 
 .social-btns {
